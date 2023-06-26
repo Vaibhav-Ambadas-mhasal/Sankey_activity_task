@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F_Task_1</title>
+    <!-- <link rel="stylesheet" href="final_task.css"> -->
+
+    <!-- <link rel="stylesheet" href="Finel_task_1.css"> -->
+
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- <div class="page1"> -->
+
+        <div class="heading">
+            <!-- <h3>Welcome Employee Portal</h3> -->
+            <h2>Employee Portal</h2>
+        </div>
+
+        <table>
+
+            <tr>
+                <td class="table1">
+
+                    <div class="from">
+
+                        <form autocomplete="off" onsubmit="onFormSubmit()">
+
+                            <div>
+                                <label for="id1">ID</label>
+
+                                <span id="id1span"></span>
+                                <span id="id1span2"></span>
+                                <span id="idspan3"></span>
+
+                                <input type="number" id="id1" value="" min="1" required>
+                                <!-- pattern="^[0-9]+" -->
+                                <!-- <span id
+                                    ="id1span"></span>
+                                    <span id="id1span2"></span> -->
+                            </div>
+
+                            <div>
+                                <label for="name1">NAME</label>
+                                <span id="name1span"></span>
+                                <input type="text" name="name1" id="name1" value="" pattern="^[A-Za-z\s]+$" required>
+
+                            </div>
+
+                            <div>
+                                <label for="age1">AGE</label>
+                                <span id="age1span"></span>
+                                <input type="number" name="age1" id="age1" value="" min="18" max="60" required>
+
+                            </div>
+
+                            <div>
+                                <label for="gen1">GENDER</label>
+                                <!-- <span id="gen1span"></span> -->
+
+                                <select name="gen1" id="gen1" required value="">
+                                    <option value="" selected disabled hidden></option>
+
+                                    <option value="MALE">MALE</option>
+                                    <option value="FEMALE">FEMALE</option>
+                                    <option value="OTHER">OTHER</option>
+
+                                </select>
+                                <span id="gen1span"></span>
+
+
+
+                            </div>
+
+
+                            <div class="for_action_button">
+                                <input type="submit" value="submit" onclick="myfun()">
+                                <!-- <button type="submit" onclick="myfun()" value="submit">submit</button> -->
+                                <input type="reset" value="reset">
+
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                <td class="tablepart2">
+                    <table class="list" id="storelist">
+
+                        <head class="table2tr">
+                            <tr>
+                                <th>ID</th>
+                                <th>NAME</th>
+                                <th>AGE</th>
+                                <th>GENDER</th>
+                                <th>ACTION</th>
+                            </tr>
+                        </head>
+
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+
+                </td>
+            </tr>
+
+        </table>
+
+
+
+
+
+        <!-- </div> -->
+
+
+
+    </div>
+
+
+    <script type="text/javascript" src="./final_task.js"></script>
+</body>
+
+</html>
+<!-- 
+     <div class="from">
+
+                <form action="">
+
+                    <div>
+                        <label for="id1">ID</label>
+                        <input type="number" value="">
+                    </div>
+
+                    <div>
+                        <label for="name1">NAME</label>
+                        <input type="text" value="">
+                    </div>
+
+                    <div>
+                        <label for="age1">AGE</label>
+                        <input type="number" value="">
+
+                    </div>
+
+                    <div>
+                        <label for="gen1">GENDER</label>
+                        <select name="gen" id="">
+                            <option value="MALE">MALE</option>
+                            <option value="FEMALE">FEMALE</option>
+                            <option value="OTHER">OTHER</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+                        <button type="submit">ADD</button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+ -->

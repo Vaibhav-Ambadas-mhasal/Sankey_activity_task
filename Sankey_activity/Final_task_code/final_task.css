@@ -1,0 +1,344 @@
+body{
+    background-image: url('old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.heading{
+    color: white;
+}
+
+table{
+   width: 80%;
+   margin: 40px auto;
+   margin-top: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   box-sizing: border-box;
+   background: rgb(124, 154, 167); 
+   /* height: 0%; */
+   font-size: 19px;
+}
+
+.main{
+    height: 10px;
+}
+/* table{
+    width: 1000px;
+    box-sizing: border-box;
+} */
+
+.table1{
+    box-sizing: border-box;
+}
+
+.tablepart2{
+    width: 900px;
+    box-sizing: border-box;
+}
+
+.from{
+    width: 400px;
+    
+}
+
+/* extra */
+
+
+
+
+/*  */
+
+
+table.list{
+    text-align: center;
+    width: 100%;
+    
+}
+
+td{
+    border: 1px solid rgb(204, 200, 200);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+/* each row are dezing */
+
+/* :nth-child(even), table.list thread> tr{
+    border-color: rgb(204, 200, 200);
+    
+} */
+
+input[type="text"], input[type="number"]{
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(105, 101, 101);
+    border-radius: 4px;
+}
+
+ input[type="submit"]{
+    background: #eee;
+    padding: 6px 12px;
+    margin: 20px 0 20px ;
+    
+    display: inline-block;
+    border: none;
+    border-radius: 7px; 
+    /* use to order round */
+    font-size: 1rem;
+    cursor: pointer;
+/*  cursor change into hande */
+    outline: none;
+    width: 80px;
+}
+
+
+input[type="reset"]{
+    background: #eee;
+    padding: 6px 12px;
+    margin: 20px 0 20px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 7px; 
+    /* use to order round */
+    font-size: 1rem;
+    cursor: pointer;
+/*  cursor change into hande */
+    outline: none;
+    margin-left: 20px;
+    width: 80px;
+}
+/* 
+input[type="reset"]{
+    margin-left: 345px;
+    margin-right: 0;
+} */
+
+/* input[type="submit"]{
+    margin-left: 600px;
+} */
+/* dizing submit and reset button */
+
+input[type="submit"]:hover{
+    background: #04C35C;
+}
+
+input[type="reset"]:hover{
+    background:rgb(216, 49, 49);
+}
+
+
+/* extera dezingi */
+
+
+form{
+    /* background-color: green; */
+    margin: 10px;
+    font-size: 19px;
+}
+
+.tablepart2{
+    font-size: 22px;
+}
+
+
+#id1span{
+    color: rgba(224, 7, 7, 0.838);
+    margin-left: 20px;
+    font-size: 20px;
+    /* background-color:black; */
+}
+
+#name1span{
+    color: rgba(224, 7, 7, 0.838);
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#age1span{
+    color: rgba(224, 7, 7, 0.838);
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#gen1span{
+    color: rgba(224, 7, 7, 0.838);
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+#id1span2{
+    color: rgba(224, 7, 7, 0.838);
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+
+#id1{
+    height: 10px;
+    border: none;
+outline: none;
+font-size: 18px;
+width: 300px;
+margin-bottom: 10px;
+}
+
+#name1{
+    height: 10px;
+    border: none;
+outline: none;
+font-size: 18px;
+width: 300px;
+margin-bottom: 10px;
+}
+
+#age1{
+    height: 10px;
+    border: none;
+outline: none;
+font-size: 18px;
+width: 300px;
+margin-bottom: 10px;
+}
+
+#gen1{
+
+    height: 25px;
+   border: none;
+   outline: none; 
+    margin-top: 10px; 
+    margin-left: 10px;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+h2{
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 510px;
+    font-size: 40px;
+}
+
+h2:hover{
+    color:rgb(124, 154, 167);
+}
+
+#Edit1{
+border-radius: 4px;
+outline: none; 
+border: none;
+width: 60px;
+height: 23px;
+}
+
+#onDelite{
+    border-radius: 4px;
+outline: none; 
+border: none;
+width: 60px;
+height: 23px;
+}
+
+
+#Edit1:hover{
+   background-color:#04C35C ;
+}
+
+#onDelite:hover{
+    background-color: rgb(216, 49, 49);
+}
+
+
+
+/* #id1{
+margin-top: 10px;
+margin-bottom: 30px;
+height: 8px;
+width: 250px;
+border: none;
+outline: none;
+font-size: 18px;
+margin-left: 30px;
+margin-right: 40px;
+}
+
+#name1{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    height: 10px;
+    width: 300px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    }
+
+
+ #age1{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        height: 10px;
+        width: 300px;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        }
+
+
+#gen1{
+   height: 25px;
+   border: none;
+   outline: none; */
+   /* margin-top: 20px; */
+   /* margin-left: 10px;
+   border-radius: 5px;
+} */
+ 
+
+
+
+
+
+
+
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.main{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.page1{
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    
+
+}
+
+.form{
+    display: flex;
+
+
+} */
+
+
