@@ -1,0 +1,202 @@
+// main page in sankey 
+
+html code
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sankey_Ex1.1.css">
+    <title>Sankey Solutions Web Page</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <nav>
+            <h2 class="logo"> <span class="span1">Sankey</span> <span class="span2">Solutions</span> </h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Technologies</a></li>
+                <li class="login"><a href="#login2">Login</a></li>
+            </ul>
+
+            <!-- <button type="" >Login</button> -->
+        </nav>
+
+    </div>
+
+
+
+    <!-- <div class="about">
+        <p class="aboutp">Every Sankian follows a cycle of constantly learning and unlearning technical concepts. This enables Sankians to experiment with various genre of technologies and build solutions with them, outpacing industry professionals. This learning muscle has enabled Sankians to adopt new technologies, create innovative solutions at a unmatched pace.</p>
+    </div> -->
+
+<!-- 
+    <div class="login2" id="login2">
+        <div class="image">
+            <img src="ogphcs6gqs5xthj38uuc.avif">
+         </div>
+       <div class="form">
+        <h4>Welcome back</h4>
+        <h2>Loing to your account</h2>
+        <form action="">
+            <label for="">Password</label>
+            <input type="password" required>
+
+            <label for="">Email</label>
+            <input type="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+        
+    </div> -->
+
+
+
+
+</body>
+
+</html>
+
+/ ------------------------------------------------------------------------
+
+css code
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Sankey\ emage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+.logo{
+    color: white;
+    font-size: 23px;
+}
+span{
+    color:#03729B ;
+}
+.span1{
+font-size: 35px;
+color: white;
+}
+.span1:hover{
+    color: #03729B;
+}
+
+.span2:hover{
+    color: white;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+nav ul li a:hover{
+    color: #03729B;
+    transition: 3ms;
+}
+
+.login{
+    border: none;
+    background: #03729B;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+
+.login:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    color: #03729B;
+    background: white;
+}
+
+/* sencond page */
+/* .about{
+    height: 100vh;
+    width: 100%;
+background-image: url(office-desk-table-with-computer-top-view-with-copy-space_146377-54.avif);
+
+background-size: cover;
+background-position: center;
+
+} */
+
+/* .aboutp{
+    font-weight: bold;
+    color: white;
+    
+} */
+
+/* .login2{
+    width: 100%;
+    height: 100vh;
+} */
+
+/* .aboutp {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    width: 550px;
+    font-size: large;
+    
+} */
+
+/* login page
+
+.login2{
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+   /* height: 100vh; */
+/* }
+.image{
+    display: flex;
+    width: 70%;
+    height: 500px;
+    margin-left: 250px; */
+    /* margin-top: 100px; */
+/* }
+.form{
+    display: flex;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+z

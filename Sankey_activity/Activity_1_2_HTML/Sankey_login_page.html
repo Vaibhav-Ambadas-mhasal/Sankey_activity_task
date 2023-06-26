@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Sankey login page  -->
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankey solutions Login</title>
+    <link rel="stylesheet" href="Sankey_login_page.css">
+
+
+    <!-- javascript Code -->
+
+    <script>
+
+        function myfun() {
+
+            const Email = "vaibhav@gmail.com";
+            const Password = '123456789';
+
+
+            // IF PASS AND EMIL EMPTY ERROR
+            // NAVIGATE TO SANKY HOM PAGE
+
+            var valueemail = document.getElementById("email1").value;
+            var valuepassord = document.getElementById("password1").value;
+
+            //   use to check validation Email
+            if (valueemail == "") {
+                document.getElementById("email2").innerHTML = " Please Fill Email";
+                return false;
+            }
+            else if (valueemail.indexOf('@') <= 0) {
+                document.getElementById("email2").innerHTML = "Invalid @ position";
+                return false;
+            }
+            else if (valueemail.charAt(valueemail.length - 4) != '.') {
+                document.getElementById("email2").innerHTML = "Invalid (.) position";
+                return false;
+            } else if (valueemail != Email) {
+                document.getElementById("email2").innerHTML = "Email incorrect";
+                return false;
+            } else if (valueemail == Email) {
+                //window.location.href = "/Sankey_main_page.html";
+                document.getElementById("email2").innerHTML = " ";
+            }
+
+
+            // else {
+            //     window.location.href = "/Sankey_main_page.html";
+            // }
+
+            //   use to check validation password
+
+            // evaluation Task
+            // if (valuepassord == "" || valuepassord.length < 5) {
+            //     document.getElementById("password2").innerHTML = "Please Fill Password";
+            //     return false;
+            // }
+
+
+            if (valuepassord == "") {
+                document.getElementById("password2").innerHTML = "Please Fill Password";
+                return false;
+            }
+            else if (valuepassord.length < 5) {
+                document.getElementById("password2").innerHTML = "Password more than 5 char";
+                return false;
+            }
+            else if (valuepassord.length > 20) {
+                document.getElementById("password2").innerHTML = "Password less than 20 char ";
+                return false;
+            } else if (valuepassord != Password) {
+                document.getElementById("password2").innerHTML = "Password incorrect";
+                return false;
+            }
+            else {
+                // window.location.href = "/Sankey_main_page.html";
+                window.location.href = "D:/Sankey Solution/HTML_Activity/Sankey_main_page.html";
+
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="contenar">
+        <div class="login">
+            <div class="content">
+                <!-- <img src="ogphcs6gqs5xthj38uuc.avif"> -->
+                <img
+                    src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/ogphcs6gqs5xthj38uuc">
+
+            </div>
+
+            <div class="loginfrom">
+
+                <form class="form" action="Sankey_login_page.html">
+                    <div class="wel">
+                        <h4> Welcome back</h4>
+                        <h2>Login to your account</h2>
+                    </div>
+                    <div class="lab1">
+                        <div class="lab1lab">
+                            <label for="email">Email</label>
+                            <!-- <i class="email">Email</i> -->
+                        </div>
+                        <div class="lab1in">
+                            <input type="email" id="email1" value="" required>
+
+                            <!-- <span id="email2" style="color: red;"></span> -->
+                            <!-- <p id="email2" style="color: red;"></p> -->
+
+                            <div id="email2"></div>
+                            <div id="email3"></div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="lab2">
+                        <div class="lab2lab">
+                            <label for="password">Password</label>
+                        </div>
+
+                        <div class="lab2in">
+                            <input type="password" id="password1" value="" required>
+                            <!-- <span id="password2"></span> -->
+                            <div id="password2"></div>
+
+                        </div>
+                    </div>
+                    <!-- </form> -->
+
+
+                    <div class="extra1">
+                        <!-- <h5>Remember me</h5> -->
+                        <!-- <div class="Remember">
+                            <input type="radio" id="Remember">
+                            <label for="Remember">Remember me</label>
+                        </div> -->
+                        <span class="Remember">
+                            <input type="radio" id="Remember">
+                            <label for="Remember">Remember me</label>
+                        </span>
+
+                        <a href="#">forgot password?</a>
+                    </div>
+
+                    <div class="button">
+
+                        <div class=" button1">
+                            <!-- <a href="Sankey_main_page.html" target="_blank"> -->
+                            <button class="Loginbutton" type="button" onclick="myfun()" value="submit">
+                                Login now
+                            </button>
+                            <!-- </a> -->
+                        </div>
+
+                        <div class="button2">
+                            <!-- <a href="Sankey_main_page.html" target="_blank"> -->
+                            <button class="LoginbuttonGoogle" type="button" onclick="myfun()" value="submit">
+                                <img src="icons8-google-48.png">
+                                Or sign-in with google
+                            </button>
+                            <!-- </a> -->
+                        </div>
+
+                    </div>
+
+                    <!-- <input type="button" onclick="myfun()" value="submit"> -->
+
+
+
+                </form>
+                <div class="extra2">
+                    Dont have an account?
+                    <a href="#">Join free today</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
