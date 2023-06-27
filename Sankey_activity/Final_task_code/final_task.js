@@ -3,6 +3,8 @@ var selectedRow = null;
 var emps_id = []; // created array to store id
 
 
+
+
 function onFormSubmit() {
 event.preventDefault();
 var formDate = readForDate();
@@ -41,6 +43,8 @@ function insertNewRecord(data) {
 
     emps_id.push(data.id1); // when new employee is added at its id so that it can't be reused
     
+    console.log(emps_id);
+console.log("hiiii");
 
     var table = document.getElementById("storelist").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow(table.length); 
@@ -63,6 +67,7 @@ function insertNewRecord(data) {
 
 //  edit function
 
+
 function onEdit(td){
     selectedRow = td.parentElement.parentElement; // traversal method use 
     document.getElementById('id1').value= selectedRow.cells[0].innerHTML;
@@ -70,34 +75,54 @@ function onEdit(td){
     document.getElementById('age1').value= selectedRow.cells[2].innerHTML;
     document.getElementById('gen1').value= selectedRow.cells[3].innerHTML;
    
+    var a= document.getElementById('id1').value;
+
+    console.log(emps_id);
+console.log("biiii");
 }
 
 function updateRecord(formDate){
 
-    emps_id.splice(emps_id.indexOf(selectedRow.cells[0].innerHTML), 1);
-
     var z=document.getElementById('id1').value; // store the id value in z
 
     for(let i=0; i<emps_id.length; i++ ){
-    if (emps_id[i]==z) {
-        return; // comes out of function
-   }
-    // emps_id.indexOf(selectedRow.cells[0].innerHTML) -> find index of id in emps_id
-    // splice -> remove id from emps_id
+        if (emps_id[i] === z) {
+            console.log(emps_id);
+            console.log("update");
+            return; // comes out of function
+           
+        }
 
-    // selectedRow.cells[0].innerHTML=formDate.id1;
-    // selectedRow.cells[1].innerHTML=formDate.name1;
-    // selectedRow.cells[2].innerHTML=formDate.age1;
-    // selectedRow.cells[3].innerHTML=formDate.gen1;
+        // selectedRow.cells[0].innerHTML=formDate.id1;
+        // selectedRow.cells[1].innerHTML=formDate.name1;
+        // selectedRow.cells[2].innerHTML=formDate.age1;
+        // selectedRow.cells[3].innerHTML=formDate.gen1;
 
- 
+    }
 
-}
 
-selectedRow.cells[0].innerHTML=formDate.id1;
-selectedRow.cells[1].innerHTML=formDate.name1;
-selectedRow.cells[2].innerHTML=formDate.age1;
-selectedRow.cells[3].innerHTML=formDate.gen1;
+    console.log(emps_id);
+        console.log("diiiiiiiiiii");
+
+    emps_id.splice(emps_id.indexOf(selectedRow.cells[0].innerHTML), 1);
+
+        // emps_id.indexOf(selectedRow.cells[0].innerHTML) -> find index of id in emps_id
+        // splice -> remove id from emps_id
+       
+    selectedRow.cells[0].innerHTML=formDate.id1;
+    selectedRow.cells[1].innerHTML=formDate.name1;
+    selectedRow.cells[2].innerHTML=formDate.age1;
+    selectedRow.cells[3].innerHTML=formDate.gen1;
+
+// console.log(formDate.id1);
+// console.log("zzzzzzzzzzzzzzzzzzzzzz");
+
+    document.getElementById('id1').value;
+    emps_id.push(formDate.id1);
+
+    console.log(emps_id);
+    console.log("ciiiiiiiiiii");
+
 }
 
 // delet this data
