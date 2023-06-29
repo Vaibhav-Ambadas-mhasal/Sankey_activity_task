@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* display: flex; */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.todo_app {
+    width: 100%;
+    max-width: 800px;
+    background: #fff;
+    margin: 60px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo_app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.todo_app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+
+
+/* .fromContainer{
+    background: wheat;   
+} */
+
+
+
+.fromContainer1 {
+    display: flex;
+    /* flex-direction: column; */
+    /* background-color: aqua; */
+    font-size: 19px;
+    margin-top: 10px;
+}
+
+.fromContainer3 {
+    display: flex;
+    flex-direction: column;
+    /* background-color: rgb(47, 49, 49); */
+
+}
+
+
+
+.fromContainer label {
+    /* color: #153677; */
+    color: #2D3748;
+
+}
+
+.fromContainer input {
+    /* width: %; */
+    padding: 8px 8px;
+    margin: 8px 0;
+    /* display: inline-block; */
+    border: 1px solid rgb(105, 101, 101);
+    border-radius: 4px;
+}
+
+
+.text input {
+    /* width: ; */
+    /* margin-left: 10px; */
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /* display: block; */
+}
+
+
+
+
+#Status {
+    padding: 6px 6px;
+    margin: 8px 0;
+    /* display: inline-block; */
+    border: 1px solid rgb(105, 101, 101);
+    border-radius: 4px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.Status1 {
+    margin-left: 50px;
+}
+
+
+
+
+.startDate {
+    margin-left: 50px;
+}
+
+
+.startDate input {
+    /* display: inline; */
+    /* margin-left: 9px; */
+    margin-top: 10px;
+}
+
+
+.endDate {
+    margin-left: 50px;
+}
+
+.endDate input {
+    /* display: inline; */
+    /* margin-left: 10px; */
+    margin-top: 10px;
+}
+
+input.input2 {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+input.input1 {
+    cursor: pointer;
+}
+
+
+.tablepart2{
+    margin-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+th{
+    margin-left: 30px;
+    font-weight: 500;
+}
+
+/* .................. */
+
+.list{
+    width: 720px;
+    box-sizing: border-box;
+    /* background-color: #2D3748; */
+    background: #f2f2f2;
+    color:black;
+    border-collapse: collapse;
+   font-size: 16px;
+   font-weight: 10;
+    
+}
+
+table.list{
+    text-align: center;
+    width: 100%;
+    
+}
+
+.list head{
+    height: 100px;
+}
+
+
+table{
+    width: 80%;
+    margin: 40px auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    /* height: 0%; */
+    font-size: 19px;
+    /* border: black solid 1px; */
+ }
+
+
+ td{
+    border: 1px solid rgb(204, 200, 200);
+    text-align: left;
+    padding: 8px 15px;
+}
+
+
+
+#Edit1{
+    border-radius: 4px;
+    outline: none; 
+    border: none;
+    width: 60px;
+    height: 23px;
+    }
+    
+    #onDelite{
+        border-radius: 4px;
+    outline: none; 
+    border: none;
+    width: 60px;
+    height: 23px;
+    }
+    
+    
+    #Edit1:hover{
+       background-color:#04C35C ;
+    }
+    
+    #onDelite:hover{
+        background-color: rgb(216, 49, 49);
+    }
+    
+    
+
+   
+    
+    input[type="submit"]:hover{
+        background: #04C35C;
+    }
+    
+    input[type="reset"]:hover{
+        background:rgb(216, 49, 49);
+    }
+    
+    
+
+    .list th{
+    
+        border-collapse: collapse;
+        border: 1px solid black;
+
+    padding: 8px 8px;
+    margin: 8px 0;
+    /* display: inline-block; */
+    border: 1px solid rgb(0, 0, 0);
+    /* border-radius: 4px; */
+    }
+
+    td{
+        border: 1px solid rgb(10, 10, 10);
+        text-align: left;
+        padding: 8px 15px;
+    }
+
+    
+/* 
+tr{
+    border-bo;
+} */
+
+
+.Searchbar1{
+    padding: 8px 8px;
+  margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+
+
+
+
+    

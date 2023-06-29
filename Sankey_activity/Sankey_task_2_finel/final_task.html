@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="finel_task.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="todo_app">
+
+            <h2>To-Do List <img
+                    src="https://play-lh.googleusercontent.com/4WQQ9as7j17uPuuzSdkQBEJ_aSvs2_9Nikmh3IY9dpfiha5hddwOp0g-QjUH31nMzTk7"
+                    alt=""></h2>
+
+            <div class="fromContainer">
+                <form autocomplete="off" onsubmit="onFormSubmit()" >
+
+                    <div class="fromContainer1">  
+                    <div class="text fromContainer3" >
+                        <label for="task">New Task</label>
+                        <input type="text" id="task" value="" pattern="^[A-Za-z0-9\s]+$" required>
+                    </div>
+
+                    <div class="startDate fromContainer3">
+                        <label for="startDate">Start Date</label>
+                        <input type="date" name="startDate" id="startDate" value=""   required>
+<!-- oninput="startdate1()" -->
+                    </div>
+
+                    <div class="endDate fromContainer3" >
+                        <label for="endDate">End Date</label>
+                        <input type="date" name="endDate" id="endDate" value=""  required>
+
+                    </div>
+                
+
+                    <div class="Status fromContainer3">
+                        <label for="Status" class="Status1" >Status</label>
+                        <select name="Status" id="Status" required value="" >
+                            <option value="" selected disabled hidden></option>
+                            <option value="Upcoming">Upcoming</option>
+                            <option value="In-Progress">In-Progress</option>
+                            <option value="Completed">Completed</option>
+                            <option value="Due-Passed">Due-Passed</option>
+                        </select>
+                    </div>
+</div>
+
+                    <div class="button">
+                        <input type="submit" value="Add Task" class="input1">
+                        <input type="reset" value="Reset Task" class="input2">
+                    </div>
+
+                </form>
+            </div>
+
+            <div class="Searchbar">
+                <input type="text" class="Searchbar1" id="search" placeholder="Search here" onkeyup="searchfun()">
+            </div>
+
+            <div class="tablepart2">
+
+                <table class="list" id="storelist">
+
+                    <head class="table2tr">
+                        <tr>
+                            <th>Task</th>
+                            <th>StartDate</th>
+                            <th>EndDate</th>
+                            <th>Status</th>
+                            <th>ACTION</th>
+                        </tr>
+                    </head>
+
+                    <tbody>
+ 
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="finel_task.js"></script>
+</body>
+
+</html>
